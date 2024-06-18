@@ -1,5 +1,7 @@
 import styles from './Sidebar.module.scss'
+import daltonImg from '../../assets/png/dalton.png'
 import samanthaImg from '../../assets/png/samantha.png'
+
 import { Link, useLocation } from 'react-router-dom'
 
 const sidebarNavLinks = ["dashboard", "expenses", "wallets", "summary", "accounts", "settings"]
@@ -13,11 +15,11 @@ const Sidebar = () => {
                 <div className={styles.sidebarContent}>
                     <div className={styles.profileDetails}>
                         <div className={styles.profileImageDiv}>
-                            <img src={samanthaImg} alt="samantha" />
+                            <img className={styles.profileImage} src={daltonImg} alt="dalton" />
                             <p className={styles.notifications}>4</p>
                         </div>
-                        <p className={styles.userName}>Samantha</p>
-                        <p className={styles.userEmail}>samantha@email.com</p>
+                        <p className={styles.userName}>Dalton</p>
+                        <p className={styles.userEmail}>chivambo@email.com</p>
                     </div>
 
                     <nav className={styles.sidebarNav}>
